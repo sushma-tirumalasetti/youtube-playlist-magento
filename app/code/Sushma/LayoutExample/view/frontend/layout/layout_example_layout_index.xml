@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page xmlns:xsi="http://www.w3org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:view/Layout">
+
+    <head>
+        <title>Layout Example</title>
+    </head>
+    <body>
+        <referenceBlock name='page.main.title'>
+            <action method="setPageTitle">
+                <argument name='page_title' xsi:type="string">Something Else</argument>
+            </action>
+        </referenceBlock>
+        <!-- <referenceBlock name='page.main.title' remove="true"/> -->
+        <referenceContainer name='content'>
+            <block name="layout_example" class='Magento\Framework\View\Element\Template' template ="Sushma_LayoutExample::content.phtml"/>
+        </referenceContainer>
+    </body>
+</page>
