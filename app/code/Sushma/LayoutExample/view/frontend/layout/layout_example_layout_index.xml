@@ -16,6 +16,11 @@
             <block name="layout_example" class='Sushma\LayoutExample\Block\Layout\Index' template ="Sushma_LayoutExample::content.phtml">
                 <block name='layout_note' class='Sushma\LayoutExample\Block\Layout\Note' template="Sushma_LayoutExample::note.phtml"/>
             </block>
+            <block name="cms_block_example" class="Magento\Cms\Block\Block">
+                <arguments>
+                        <argument name="block_id" xsi:type='string'>cmx_block_example</argument>
+                </arguments>
+            </block>
 
         </referenceContainer>
     </body>
