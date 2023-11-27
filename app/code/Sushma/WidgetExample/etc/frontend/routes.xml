@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/routes.xsd">
+    <router id ="standard">
+        <route id="widget_example" frontName="widget_example">
+            <module name="Sushma_WidgetExample"/>
+        
+        </route>
+    </router>
+
+</config>
+
+
+
+<!-- <?xml version="1.0" encoding='UTF-8'?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/routes.xsd">
+    <router id="standard">
+        <route id="layout_example" frontName="layout_example">
+            <module name="Sushma_LayoutExample"/>
+        </route>
+    </router>
+    
+</config> -->
