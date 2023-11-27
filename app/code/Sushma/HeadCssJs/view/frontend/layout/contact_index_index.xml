@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page xmlns:xsi="http://www.w3org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:view/Layout">
+
+    <head>
+        <css src='Sushma_HeadCssJs::css/contact.css'/>
+        <script src="Sushma_HeadCssJs::js/contact.js"/>
+    </head>
+</page>
