@@ -19,4 +19,8 @@ class Index extends Template{
     public function getSubTitle():String{
         return "Learn Magento2 Developement";
     }
+
+    public function getNodeHtml():String{
+        return $this->getLayout()->createBlock(Note::class)->toHtml();
+    }
 }

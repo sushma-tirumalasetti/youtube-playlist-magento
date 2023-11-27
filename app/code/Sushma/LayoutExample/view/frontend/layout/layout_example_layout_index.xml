@@ -13,7 +13,9 @@
         <!-- <referenceBlock name='page.main.title' remove="true"/> -->
         <referenceContainer name='content'>
             <!-- <block name="layout_example" class='Magento\Framework\View\Element\Template' template ="Sushma_LayoutExample::content.phtml"/> -->
-            <block name="layout_example" class='Sushma\LayoutExample\Block\Layout\Index' template ="Sushma_LayoutExample::content.phtml"/>
+            <block name="layout_example" class='Sushma\LayoutExample\Block\Layout\Index' template ="Sushma_LayoutExample::content.phtml">
+                <block name='layout_note' class='Sushma\LayoutExample\Block\Layout\Note' template="Sushma_LayoutExample::note.phtml"/>
+            </block>
 
         </referenceContainer>
     </body>
