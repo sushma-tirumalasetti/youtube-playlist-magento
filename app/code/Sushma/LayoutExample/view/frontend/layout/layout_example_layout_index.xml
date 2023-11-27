@@ -5,14 +5,16 @@
         <title>Layout Example</title>
     </head>
     <body>
-        <referenceBlock name='page.main.title'>
+        <!-- <referenceBlock name='page.main.title'>
             <action method="setPageTitle">
                 <argument name='page_title' xsi:type="string">Something Else</argument>
             </action>
-        </referenceBlock>
+        </referenceBlock> -->
         <!-- <referenceBlock name='page.main.title' remove="true"/> -->
         <referenceContainer name='content'>
-            <block name="layout_example" class='Magento\Framework\View\Element\Template' template ="Sushma_LayoutExample::content.phtml"/>
+            <!-- <block name="layout_example" class='Magento\Framework\View\Element\Template' template ="Sushma_LayoutExample::content.phtml"/> -->
+            <block name="layout_example" class='Sushma\LayoutExample\Block\Layout\Index' template ="Sushma_LayoutExample::content.phtml"/>
+
         </referenceContainer>
     </body>
 </page>
