@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page xmlns:xsi="http://www.w3org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:view/Layout">
+    <body>
+        <referenceBlock name='head.additional'>
+            <block name="header_footer_script" template="Sushma_HeaderFooterScript::header_additional/header_footer_script.phtml"
+            class="Magento\Framework\View\Element\Template"/>
+        </referenceBlock>
+    </body>
+</page>
