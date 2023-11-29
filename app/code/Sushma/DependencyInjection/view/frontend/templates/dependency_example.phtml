@@ -1,0 +1,42 @@
+<?php /** @var Sushma\DependencyInjection\Block\Example*/?>
+<div>
+    <h2>Dependency Example</h2>
+</div>
+
+<p>
+    Class Main id is: <?= $block->getMain()->getId()?>
+</p>
+
+<p>
+    Class Injectible is: <?= $block->getMain()->getInjectible()->getId()?>
+</p>
+
+<p>
+    Class Injectible is: <?= $block->getMain()->getNonInjectible()->getId()?>
+</p>
+
+<p>
+    Class UtilName is: <?= $block->getMain()->getUtil()->getName()?>
+</p>
+
+<p>
+    Class HeavyOperationName is: <?= $block->getMain()->getHeavyOperation()->getName()?>
+</p>
+
+<p>
+    Class DefaultName is: <?= $block->getMain()->getDefaultName()->getName()?>
+
+</p>
+<!-- this wi;; create an error because null is used -->
+<!-- <p>
+    Class Optional is:  same like above
+
+</p> -->
+
+<p>
+    Class Otional Name is: <?= $block->getMain()->getOptional()->getName()?>
+</p>
+
+<p>
+    Class MethodInjection Name is: <?= $block->getMain()->getMethodInjectionName()?>
+</p>
