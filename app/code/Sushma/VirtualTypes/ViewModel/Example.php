@@ -4,7 +4,7 @@ namespace Sushma\VirtualTypes\ViewModel;
 
 use Magento\Framework\App\RequestInterface;
 use Magento\Framework\View\Element\Block\ArgumentInterface;
-use Sushma\VirtualTypes\Api\WarehouseRepositoryInterface;
+use Sushma\WarehouseMangement\Api\WarehouseRepositoryInterface;
 
 class Example implements ArgumentInterface{
 

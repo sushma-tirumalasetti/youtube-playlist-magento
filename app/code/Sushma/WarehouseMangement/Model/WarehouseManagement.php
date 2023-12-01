@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace Sushma\VirtualTypes\Model;
+namespace Sushma\WarehouseMangement\Model;
 
-use Sushma\VirtualTypes\Api\WarehouseManagementInterface;
+use Sushma\WarehouseMangement\Api\WarehouseManagementInterface;
 
 class WarehouseManagement  implements WarehouseManagementInterface{
     public function getWarehouseInfo(string $code) :array{

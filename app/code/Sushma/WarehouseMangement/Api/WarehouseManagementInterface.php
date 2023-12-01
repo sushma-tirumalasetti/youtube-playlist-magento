@@ -1,7 +1,7 @@
 <?php
 
 declare (strict_types=1);
-namespace Sushma\VirtualTypes\Api;
+namespace Sushma\WarehouseMangement\Api;
 
 interface WarehouseManagementInterface{
     public function getWarehouseInfo(string $code) :array;

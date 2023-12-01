@@ -2,7 +2,7 @@
 
 declare (strict_types=1);
 
-namespace Sushma\VirtualTypes\Api;
+namespace Sushma\WarehouseMangement\Api;
 
 use Magento\Framework\DataObject;
 

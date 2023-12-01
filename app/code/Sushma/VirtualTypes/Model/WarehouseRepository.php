@@ -2,16 +2,24 @@
 declare (strict_types=1);
 namespace Sushma\VirtualTypes\Model;
 
-use Sushma\VirtualTypes\Api\WarehouseRepositoryInterface;
 use Magento\Framework\DataObject;
-use Sushma\VirtualTypes\Api\WarehouseManagementInterface;
+use Sushma\VirtualTypes\Model\WarehouseExtendedManagement;
+// use Sushma\WarehouseMangement\Api\WarehouseManagementInterface;
 
-class WarehouseRepository implements WarehouseRepositoryInterface{
-    protected WarehouseManagementInterface $warehouseManagement;
-    public function __construct(WarehouseManagementInterface $warehouseManagement){
-        $this->warehouseManagement = $warehouseManagement;
+class WarehouseRepository extends \Sushma\WarehouseMangement\Model\WarehouseRepository{
+    // protected WarehouseExtendedManagement $warehouseManagement;
+    public function __construct(WarehouseExtendedManagement $warehouseManagement){
+        // $this->warehouseManagement = $warehouseManagement;
+        parent::__construct($warehouseManagement);
     }
     public function newWarehouse(string $code) :DataObject{
-        return new DataObject($this->warehouseManagement->getWarehouseInfo($code));
+        dump("sushma");
+        if(in_array($code,$this->warehouseManagement->getDiscontinuedWarehouses())){
+            throw new \Exception('Warehouse no longer exits');
+        }
+        return parent::newWarehouse($code);
     }
+    // public function newWarehouse(string $code) :DataObject{
+    //     return new DataObject($this->warehouseManagement->getWarehouseInfo($code));
+    // }
 }

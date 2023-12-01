@@ -2,6 +2,7 @@
 declare (strict_types= 1);
 namespace Sushma\VirtualTypes\Model;
 
+use Sushma\WarehouseMangement\Model\WarehouseManagement;
 class WarehouseExtendedManagement extends WarehouseManagement{
     protected function getAllWarehouses(): array{
         $extraWarehouses = [
@@ -17,6 +18,13 @@ class WarehouseExtendedManagement extends WarehouseManagement{
             ],
         ];
         return array_merge(parent::getAllWarehouses(), $extraWarehouses);
+    }
+
+    public function getDiscontinuedWarehouses() :array{
+        return [
+            'lon1',
+        ];
+
     }
 
 }
