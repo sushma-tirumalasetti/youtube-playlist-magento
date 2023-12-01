@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page xmlns:xsi="http://www.w3org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:view/Layout">
+    <body>
+        <referenceContainer name='content'>
+            <block name="proxy_pattern" template="Sushma_ProxyExample::proxy.phtml"
+                class="Magento\Framework\View\Element\Template">
+                <arguments>
+                    <argument name="view_model" xsi:type="object">Sushma\ProxyExample\ViewModel\Example</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+    </body>  
+</page>

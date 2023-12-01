@@ -1,0 +1,8 @@
+<?php /** @var /Magento/Framework/View/Element/Template $block */ ?>
+<p>Example</p>
+
+<ul>
+    <?php foreach($block->getViewModel()->getFeaturedProducts() as $product):?>
+        <li><?= $product?></li>
+    <?php endforeach    ;?>
+</ul>
