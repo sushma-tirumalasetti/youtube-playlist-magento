@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page xmlns:xsi="http://www.w3org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:view/Layout">
+    <body>
+        <referenceContainer  name='content'>
+            <block class='Magento\Framework\View\Element\Template' template='Sushma_IfConfigExample::ifconfig.phtml' ifconfig="sushma/ifcongig/enable"/>
+        </referenceContainer>
+    </body>
+
+</page>
