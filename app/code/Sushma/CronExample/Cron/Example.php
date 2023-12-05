@@ -10,6 +10,7 @@ class Example{
         $this->logger=$logger;
     }
     public function execute(){
+        return ;
         $this->logger->info("starting running the crons example");
         sleep(2);
         $this->logger->info("cron example finished");
