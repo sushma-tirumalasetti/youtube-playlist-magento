@@ -7,7 +7,8 @@
         "Magento_Ui/js/core/app": {
             "components": {
                 "startSimple": { 
-                    "component":"Sushma_KnockoutJs/js/plain-view-model"
+                    "component":"Sushma_KnockoutJs/js/plain-view-model",
+                    "base_url": "<?= $block->escapeJs($block->getBaseUrl()) ?>"
                 }
             }
         }
@@ -21,4 +22,5 @@
 <!-- <script>console.log("sushma soujanya ")</script> -->
    
     <h2 data-bind="text: title"></h2>
+    <pre data-bind="text: JSON.stringify(ccc,null,2)"></pre>
 </div>
