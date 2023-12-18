@@ -5,8 +5,11 @@
         <script src='Sushma_JsUiComponents::js/script-example.js' defer='true'/>
     </head>
     <body>
-        <referenceContainer name='content'>
+        <!-- <referenceContainer name='content'>
             <block name='sushma_jsuicomponents'  template='Sushma_JsUiComponents::js-container.phtml'/>
+        </referenceContainer> -->
+        <referenceContainer name='content'>
+            <block name='sushma_jsuicomponents' template='Sushma_JsUiComponents::collapsible.phtml'/>
         </referenceContainer>
     </body>
 </page>

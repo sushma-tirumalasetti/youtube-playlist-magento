@@ -2,9 +2,9 @@
 declare (strict_types=1);
 
 ?>
+<!-- <h1 date-mage-init='{"Sushma/title":{}}'></h1> -->
 
-
-<script type='text/x-magento-init'>
+<!-- <script type='text/x-magento-init'>
     {
         "#target" : {
             "coffee":{
@@ -13,4 +13,14 @@ declare (strict_types=1);
         }
     }
 </script> 
-<pre id='target'></pre>
+<pre id='target'></pre> -->
+
+
+
+<form data-mage-init='{"validation" : {}}'>
+    <div class='control'>
+        <input type='text' name='email' id='email' class='input-text' placeholder="<?=__('Your Email')?>"
+             data-validate="{required : true ,'validate-email':true}"/>
+    </div>
+    <button type='submit' class='action primary'><?= __('Submit')?></button>
+</form>
