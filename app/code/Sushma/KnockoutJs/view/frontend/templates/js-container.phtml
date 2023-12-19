@@ -17,10 +17,23 @@
 
 </script>
 
-
-<div data-bind="scope:'startSimple'">
+<!-- 
+<div data-bind="scope:'startSimple'"> -->
 <!-- <script>console.log("sushma soujanya ")</script> -->
-   <pre data-bind="text: output"></pre>
+   <!-- <pre data-bind="text: output"></pre> -->
     <!-- <h2 data-bind="text: title"></h2> -->
     <!-- <pre data-bind="text: JSON.stringify(ccc,null,2)"></pre> -->
+<!-- </div> -->
+<div data-bind="scope: 'startSimple'">
+    <ul data-bind='foreach : values'>
+        <li data-bind="text: $data"></li>
+    
+   <!-- <table data-bind="foreach: exchange_rates"> -->
+        <!-- <tr>
+            <td data-bind="text:currency_to"></td>
+            <td data-bind="text:rate"></td>
+
+        </tr> -->
+
+    </ul>
 </div>
