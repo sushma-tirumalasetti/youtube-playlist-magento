@@ -4,12 +4,16 @@ define(['uiComponent'],function(Component){
         defaults:{
             label:'ComponentA',
             amount:11,
-            tracks:{
-                amount: true,
-            },
-            imports:{
-                amount: 'component-b:value'
+            exports:{
+                // amount:'component-b:value'
+                amount: 'component-b:onRecieveExport',
             }
+            // tracks:{
+            //     amount: true,
+            // },
+            // imports:{
+            //     amount: 'component-b:value'
+            // }
         }
     });
 });
