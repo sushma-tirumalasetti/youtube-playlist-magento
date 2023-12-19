@@ -25,15 +25,23 @@
     <!-- <pre data-bind="text: JSON.stringify(ccc,null,2)"></pre> -->
 <!-- </div> -->
 <div data-bind="scope: 'startSimple'">
-    <ul data-bind='foreach : values'>
-        <li data-bind="text: $data"></li>
+    <!-- <ul data-bind='foreach : values'>
+        <li data-bind="text: $data"></li> -->
     
    <!-- <table data-bind="foreach: exchange_rates"> -->
-        <!-- <tr>
+    <table>
+
+        <tr>
+            <th data-bind="i18n : 'Currency to'"></th>
+            <th data-bind="i18n: 'Rate'"></th>
+        </tr>
+        <!-- ko foreach: exchange_rates-->
+         <tr>
             <td data-bind="text:currency_to"></td>
             <td data-bind="text:rate"></td>
+        </tr>
+        <!-- /ko -->
+   </table>
 
-        </tr> -->
-
-    </ul>
+    <!-- </ul> -->
 </div>

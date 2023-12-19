@@ -45,17 +45,24 @@ define(['ko'], function(ko){
         return function(){
             const viewModel = {
 
-                values: ko.observableArray([
-                    10,20,30,40
-                ])
+                // values: ko.observableArray([
+                //     10,20,30,40
+                // ])
 
-            //     exchange_rates: ko.observableArray([
-            //         {
-            //             currency_to:'USD',
-            //             rate:1.0
-            //         }
-                    
-            //     ]),
+                exchange_rates: ko.observableArray([
+                    {
+                        currency_to:'USD',
+                        rate:1.0
+                    },
+                    {
+                        currency_to: 'IND',
+                        rate : 2.4
+                    },
+                    {
+                        currency_to: 'END',
+                        rate : 1.5
+                    }
+                ]),
             }
             return viewModel;
 
